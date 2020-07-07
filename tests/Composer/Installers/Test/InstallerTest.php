@@ -118,6 +118,7 @@ class InstallerTest extends TestCase
             array('croogo-plugin', true),
             array('croogo-theme', true),
             array('decibel-app', true),
+            array('dframe-module', true),
             array('dokuwiki-plugin', true),
             array('dokuwiki-template', true),
             array('drupal-core', true),
@@ -125,9 +126,11 @@ class InstallerTest extends TestCase
             array('drupal-theme', true),
             array('drupal-library', true),
             array('drupal-profile', true),
+            array('drupal-database-driver', true),
             array('drupal-drush', true),
             array('drupal-custom-theme', true),
             array('drupal-custom-module', true),
+            array('drupal-custom-profile', true),
             array('dolibarr-module', true),
             array('ee3-theme', true),
             array('ee3-addon', true),
@@ -153,6 +156,9 @@ class InstallerTest extends TestCase
             array('joomla-library', true),
             array('kanboard-plugin', true),
             array('kirby-plugin', true),
+            array('known-plugin', true),
+            array('known-theme', true),
+            array('known-console', true),
             array('kohana-module', true),
             array('lms-plugin', true),
             array('lms-template', true),
@@ -165,6 +171,7 @@ class InstallerTest extends TestCase
             array('magento-library', true),
             array('majima-plugin', true),
             array('mako-package', true),
+            array('mantisbt-plugin', true),
             array('modx-extra', true),
             array('modxevo-snippet', true),
             array('modxevo-plugin', true),
@@ -192,6 +199,8 @@ class InstallerTest extends TestCase
             array('radphp-bundle', true),
             array('redaxo-addon', true),
             array('redaxo-bestyle-plugin', true),
+            array('redaxo5-addon', true),
+            array('redaxo5-bestyle-plugin', true),
             array('reindex-theme', true),
             array('reindex-plugin', true),
             array('roundcube-plugin', true),
@@ -207,6 +216,7 @@ class InstallerTest extends TestCase
             array('smf-theme', true),
             array('sydes-module', true),
             array('sydes-theme', true),
+            array('sylius-theme', true),
             array('symfony1-plugin', true),
             array('thelia-module', true),
             array('thelia-frontoffice-template', true),
@@ -298,6 +308,7 @@ class InstallerTest extends TestCase
             array('croogo-plugin', 'Plugin/Sitemaps/', 'fahad19/sitemaps'),
             array('croogo-theme', 'View/Themed/Readable/', 'rchavik/readable'),
             array('decibel-app', 'app/someapp/', 'author/someapp'),
+            array('dframe-module', 'modules/author/mymodule/', 'author/mymodule'),
             array('dokuwiki-plugin', 'lib/plugins/someplugin/', 'author/someplugin'),
             array('dokuwiki-template', 'lib/tpl/sometemplate/', 'author/sometemplate'),
             array('dolibarr-module', 'htdocs/custom/my_module/', 'shama/my_module'),
@@ -306,9 +317,11 @@ class InstallerTest extends TestCase
             array('drupal-theme', 'themes/my_theme/', 'shama/my_theme'),
             array('drupal-library', 'libraries/my_library/', 'shama/my_library'),
             array('drupal-profile', 'profiles/my_profile/', 'shama/my_profile'),
+            array('drupal-database-driver', 'drivers/lib/Drupal/Driver/Database/my_driver/', 'shama/my_driver'),
             array('drupal-drush', 'drush/my_command/', 'shama/my_command'),
             array('drupal-custom-theme', 'themes/custom/my_theme/', 'shama/my_theme'),
             array('drupal-custom-module', 'modules/custom/my_module/', 'shama/my_module'),
+            array('drupal-custom-profile', 'profiles/custom/my_profile/', 'shama/my_profile'),
             array('elgg-plugin', 'mod/sample_plugin/', 'test/sample_plugin'),
             array('eliasis-component', 'components/my_component/', 'shama/my_component'),
             array('eliasis-module', 'modules/my_module/', 'shama/my_module'),
@@ -333,6 +346,9 @@ class InstallerTest extends TestCase
             array('joomla-plugin', 'plugins/my_plugin/', 'shama/my_plugin'),
             array('kanboard-plugin', 'plugins/my_plugin/', 'shama/my_plugin'),
             array('kirby-plugin', 'site/plugins/my_plugin/', 'shama/my_plugin'),
+            array('known-plugin', 'IdnoPlugins/SamplePlugin/', 'known/SamplePlugin'),
+            array('known-theme', 'Themes/SampleTheme/', 'known/SampleTheme'),
+            array('known-console', 'ConsolePlugins/SampleConsolePlugin/', 'known/SampleConsolePlugin'),
             array('kohana-module', 'modules/my_package/', 'shama/my_package'),
             array('lms-plugin', 'plugins/MyPackage/', 'shama/MyPackage'),
             array('lms-plugin', 'plugins/MyPackage/', 'shama/my_package'),
@@ -355,6 +371,7 @@ class InstallerTest extends TestCase
             array('modxevo-template', 'assets/templates/my_template/', 'shama/my_template'),
             array('modxevo-lib', 'assets/lib/my_lib/', 'shama/my_lib'),
             array('mako-package', 'app/packages/my_package/', 'shama/my_package'),
+            array('mantisbt-plugin', 'plugins/MyPlugin/', 'shama/my_plugin'),
             array('mediawiki-extension', 'extensions/APC/', 'author/APC'),
             array('mediawiki-extension', 'extensions/APC/', 'author/APC-extension'),
             array('mediawiki-extension', 'extensions/UploadWizard/', 'author/upload-wizard'),
@@ -385,6 +402,8 @@ class InstallerTest extends TestCase
             array('radphp-bundle', 'src/Migration/', 'atkrad/migration'),
             array('redaxo-addon', 'redaxo/include/addons/my_plugin/', 'shama/my_plugin'),
             array('redaxo-bestyle-plugin', 'redaxo/include/addons/be_style/plugins/my_plugin/', 'shama/my_plugin'),
+            array('redaxo5-addon', 'redaxo/src/addons/my_plugin/', 'shama/my_plugin'),
+            array('redaxo5-bestyle-plugin', 'redaxo/src/addons/be_style/plugins/my_plugin/', 'shama/my_plugin'),
             array('reindex-theme', 'themes/my_module/', 'author/my_module'),
             array('reindex-plugin', 'plugins/my_module/', 'author/my_module'),
             array('roundcube-plugin', 'plugins/base/', 'test/base'),
@@ -403,6 +422,7 @@ class InstallerTest extends TestCase
             array('silverstripe-theme', 'themes/my_theme/', 'shama/my_theme'),
             array('smf-module', 'Sources/my_module/', 'shama/my_module'),
             array('smf-theme', 'Themes/my_theme/', 'shama/my_theme'),
+            array('sylius-theme', 'themes/my_theme/', 'shama/my_theme'),
             array('symfony1-plugin', 'plugins/sfShamaPlugin/', 'shama/sfShamaPlugin'),
             array('symfony1-plugin', 'plugins/sfShamaPlugin/', 'shama/sf-shama-plugin'),
             array('thelia-module', 'local/modules/my_module/', 'shama/my_module'),
@@ -529,6 +549,23 @@ class InstallerTest extends TestCase
             'modules/custom/{$name}/' => array(
               'vendor:penyaskito'
             ),
+          ),
+        ));
+        $result = $installer->getInstallPath($package);
+        $this->assertEquals('modules/custom/my_module/', $result);
+    }
+
+    /**
+     * testStringPath
+     */
+    public function testStringPath()
+    {
+        $installer = new Installer($this->io, $this->composer);
+        $package = new Package('penyaskito/my_module', '1.0.0', '1.0.0');
+        $package->setType('drupal-module');
+        $this->composer->getPackage()->setExtra(array(
+          'installer-paths' => array(
+            'modules/custom/{$name}/' => 'vendor:penyaskito',
           ),
         ));
         $result = $installer->getInstallPath($package);

@@ -11,8 +11,8 @@ Users can also customize the install path per package and package authors can
 modify the package name upon installing.
 
 Installers isn't intended on replacing all custom installers. If your
-package requires special installation handling then by all means, create a
-custom installer to handle it.
+package requires special installation handling then by all means, [create a
+custom installer to handle it](https://getcomposer.org/doc/articles/custom-installers.md).
 
 **Natively Supported Frameworks**:
 
@@ -50,9 +50,10 @@ is not needed to install packages with these frameworks:
 | Craft        | `craft-plugin`
 | Croogo       | `croogo-plugin`<br>`croogo-theme`
 | Decibel      | `decibel-app`
+| Dframe       | `dframe-module`
 | DokuWiki     | `dokuwiki-plugin`<br>`dokuwiki-template`
 | Dolibarr     | `dolibarr-module`
-| Drupal       | <b>`drupal-core`<br>`drupal-module`<br>`drupal-theme`</b><br>`drupal-library`<br>`drupal-profile`<br>`drupal-drush`<br>`drupal-custom-theme`<br>`drupal-custom-module`
+| Drupal       | <b>`drupal-core`<br>`drupal-module`<br>`drupal-theme`</b><br>`drupal-library`<br>`drupal-profile`<br>`drupal-database-driver`<br>`drupal-drush`<br>`drupal-custom-theme`<br>`drupal-custom-module`<br>`drupal-custom-profile`<br>`drupal-drupal-multisite`<br>`drupal-console`<br>`drupal-console-language`<br>`drupal-config`
 | Elgg         | `elgg-plugin`
 | Eliasis      | `eliasis-component`<br>`eliasis-module`<br>`eliasis-plugin`<br>`eliasis-template`
 | ExpressionEngine 3         | `ee3-addon`<br>`ee3-theme`
@@ -66,6 +67,7 @@ is not needed to install packages with these frameworks:
 | Joomla       | `joomla-component`<br>`joomla-module`<br>`joomla-template`<br>`joomla-plugin`<br>`joomla-library`
 | Kanboard     | `kanboard-plugin`
 | Kirby        | **`kirby-plugin`**<br>`kirby-field`<br>`kirby-tag`
+| Known        | `known-plugin`<br>`known-theme`<br>`known-console`
 | KodiCMS      | `kodicms-plugin`<br>`kodicms-media`
 | Kohana       | **`kohana-module`**
 | Lan Management System | `lms-plugin`<br>`lms-template`<br>`lms-document-template`<br>`lms-userpanel-module`
@@ -75,6 +77,7 @@ is not needed to install packages with these frameworks:
 | Magento      | `magento-library`<br>`magento-skin`<br>`magento-theme`
 | majima       | `majima-plugin`
 | Mako         | `mako-package`
+| MantisBT     | `mantisbt-plugin`
 | Mautic       | `mautic-plugin`<br>`mautic-theme`
 | Maya         | `maya-module`
 | MODX         | `modx-extra`
@@ -88,13 +91,16 @@ is not needed to install packages with these frameworks:
 | Moodle       | `moodle-*` (Please [check source](https://raw.githubusercontent.com/composer/installers/master/src/Composer/Installers/MoodleInstaller.php) for all supported types)
 | Piwik        | `piwik-plugin`
 | phpBB        | `phpbb-extension`<br>`phpbb-style`<br>`phpbb-language`
-| Pimcore      | `pimcore-plugin`
+| Pimcore      | `pimcore-plugin`(deprecated, only used for versions <= 4) 
 | Plentymarkets      | `plentymarkets-plugin`
 | PPI          | **`ppi-module`**
 | Puppet       | `puppet-module`
 | Porto        | `porto-container`
 | RadPHP       | `radphp-bundle`
 | REDAXO       | `redaxo-addon`
+| REDAXO bestyle-plugin | `redaxo-bestyle-plugin`
+| REDAXO V5.*  | `redaxo5-addon`
+| REDAXO V5.*  bestyle-plugin  | `redaxo5-bestyle-plugin`
 | ReIndex      | **`reindex-plugin`** <br> **`reindex-theme`**
 | Roundcube    | `roundcube-plugin`
 | shopware     | `shopware-backend-plugin`<br/>`shopware-core-plugin`<br/>`shopware-frontend-plugin`<br/>`shopware-theme`<br/>`shopware-plugin`<br/>`shopware-frontend-theme`
@@ -102,7 +108,9 @@ is not needed to install packages with these frameworks:
 | SiteDirect   | `sitedirect-module`<br>`sitedirect-plugin`
 | SMF          | `smf-module`<br>`smf-theme`
 | SyDES        | `sydes-module`<br>`sydes-theme`
+| Sylius       | `sylius-theme`
 | symfony1     | **`symfony1-plugin`**
+| TAO          | `tao-extension`
 | Tusk         | `tusk-task`<br>`tusk-command`<br>`tusk-asset`
 | TYPO3 Flow   | `typo3-flow-package`<br>`typo3-flow-framework`<br>`typo3-flow-plugin`<br>`typo3-flow-site`<br>`typo3-flow-boilerplate`<br>`typo3-flow-build`
 | TYPO3 CMS    | `typo3-cms-extension` (Deprecated in this package, use the [TYPO3 CMS Installers](https://packagist.org/packages/typo3/cms-composer-installers) instead)
